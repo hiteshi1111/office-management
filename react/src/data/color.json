@@ -1,0 +1,34 @@
+[
+    {
+        "color": "red",
+        "code": "#ff0000"
+    },
+    {
+        "color": "orange",
+        "code": "#FFA500"
+    },
+    {
+        "color": "yellow",
+        "code": "#efcc00"
+    },
+    {
+        "color": "green",
+        "code": "#008000"
+    },
+    {
+        "color": "blue",
+        "code": "#0000FF"
+    },
+    {
+        "color": "purple",
+        "code": "#A020F0"
+    },
+    {
+        "color": "pink",
+        "code": "#FFC0CB"
+    },
+    {
+        "color": "grey",
+        "code": "#808080"
+    }
+]

@@ -1,0 +1,426 @@
+/* Loader css info  */
+.loader-info {background: currentcolor; animation: loader-info 1s ease-in-out infinite; animation-delay: 0.4s;}
+.loader-info:after,
+.loader-info:before {content: ''; position: absolute; width: inherit; height: inherit; background: inherit; animation: inherit;}
+.loader-info:before {right: .5em; animation-delay: 0.2s;}
+.loader-info:after {left: .5em; animation-delay: 0.6s;}
+
+@keyframes loader-info {
+	0%, 100% {
+		box-shadow: 0 0 0 currentcolor, 0 0 0 currentcolor;
+	}
+	50% {
+		box-shadow: 0 -.25em 0 currentcolor, 0 .25em 0 currentcolor;
+	}
+}
+ 
+.react-calendar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+ 
+.react-calendar--doubleView {
+    width: 100%;
+}
+ 
+.react-calendar--doubleView .react-calendar__viewContainer {
+    display: flex;
+    margin: -0.5em;
+}
+ 
+.react-calendar--doubleView .react-calendar__viewContainer>* {
+    width: 50%;
+    margin: 0.5em;
+}
+ 
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+.react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+ 
+.react-calendar button:enabled:hover {
+    cursor: pointer;
+}
+ 
+.react-calendar__navigation {
+    display: flex;
+    height: 44px;
+    margin-bottom: 1em;
+}
+ 
+.react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+}
+ 
+.react-calendar__navigation button:disabled {
+    background-color: #f0f0f0;
+}
+ 
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #e6e6e6;
+}
+ 
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+ 
+.react-calendar__month-view__weekdays__weekday {
+    padding: 0.5em;
+}
+ 
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+ 
+.react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+}
+ 
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #757575;
+}
+ 
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+    padding: 2em 0.5em;
+}
+ 
+.react-calendar__tile {
+    max-width: 100%;
+    padding: 10px 6.6667px;
+    background: none;
+    text-align: center;
+    line-height: 16px;
+}
+ 
+.react-calendar__tile:disabled {
+    background-color: #f0f0f0;
+}
+ 
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background-color: #e6e6e6;
+}
+ 
+.react-calendar__tile--now {
+    background: #ffff76;
+}
+ 
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: #ffffa9;
+}
+ 
+.react-calendar__tile--hasActive {
+    background: #76baff;
+}
+ 
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+    background: #a9d4ff;
+}
+ 
+.react-calendar__tile--active {
+    background: #007bff;
+    color: white;
+}
+ 
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #0056b3;
+}
+ 
+.react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #e6e6e6;
+}
+
+.ReactModal__Overlay--after-open{
+    z-index: 99999;
+}
+
+.flex-order-col .msg-chat-order {order: 2;}
+.flex-order-col .msg-avatar-order {order: 1;}
+
+
+
+
+/* TYPING LOADER */
+
+.typing-loader{
+    width: 5px;
+    height: 5px;
+    -webkit-animation: line 1s linear infinite alternate;
+    -moz-animation: line 1s linear infinite alternate;
+    animation: line 1s linear infinite alternate;
+}
+
+@-webkit-keyframes line{
+    0% {
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,0.2);          
+    }
+    25% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 24px 0px 0px 0px rgba(0,0,0,0.2);         
+    }
+    75% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,2);
+    }
+}
+
+@-moz-keyframes line{
+    0%  {
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,0.2);    
+    }
+    25% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 24px 0px 0px 0px rgba(0,0,0,0.2);            
+    }
+    75% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,2);          
+    }
+}
+
+@keyframes line{
+    0%{
+        background-color: rgba(0,0,0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,0.2);
+    }
+    25% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,2), 24px 0px 0px 0px rgba(0,0,0,0.2);          
+    }
+    75% { 
+        background-color: rgba(0,0,0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0,0,0,0.2), 24px 0px 0px 0px rgba(0,0,0,2);     
+    }
+}
+
+/* RICH TEXT CSS FOR QUILL INPUT */
+
+.richtext-input .ql-toolbar {
+    display: none;
+}
+
+.long-richtext .ql-container{
+    height: 200px;
+}
+
+.comment-richtext .ql-container{
+    height: 80px;
+}
+
+.activity-richtext b{
+    text-transform: capitalize;
+    color: rgb(7, 134, 134);
+}
+
+.input-richtext .ql-container {
+    border: none !important;
+}
+.msg-type-chat .ql-container {
+    height: auto;
+}
+.msg-type-chat .ql-container .ql-editor {
+    padding: 0px 10px 0px 0px !important;
+    max-height: 140px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.input-richtext .ql-editor {
+    padding: 0px;
+    padding-block: 10px;
+}
+.msg-type-chat .ql-editor.ql-blank::before{left: 0px;}
+
+.msg-type-chat .ql-editor img{max-height: 180px;}
+
+.input-border .ql-container {
+    border-top: 0px !important;
+}
+
+/* ADDED SCROLL TO QUILL */
+.comment-richtext .ql-editor::-webkit-scrollbar,
+.long-richtext .ql-editor::-webkit-scrollbar {width: 4px;height: 4px; border-radius: 10px;}
+.comment-richtext .ql-editor::-webkit-scrollbar-thumb {border-radius: 10px;}
+.long-richtext .ql-editor::-webkit-scrollbar-thumb {border-radius: 10px;}
+
+.msg-type-chat .ql-container .ql-editor::-webkit-scrollbar {width: 4px;height: 4px; border-radius: 10px;}
+.msg-type-chat .ql-container .ql-editor::-webkit-scrollbar-thumb {border-radius: 10px;}
+
+.scroll-it::-webkit-scrollbar {width: 4px;height: 4px; border-radius: 10px;}
+.scroll-it::-webkit-scrollbar-thumb {border-radius: 10px;}
+
+/* RICHTEXT CSS FOR QUILL TEXT*/
+
+.richtext ul, ol{
+    margin-left: 30px;
+}
+
+.richtext ul{
+    list-style-type: disc;
+}
+
+.richtext ol{
+    list-style-type: decimal;
+}
+
+.richtext a{
+    color: #00f !important;
+}
+.richtext img{max-height: 200px;}
+
+/* Activity Write A Comment */
+.activity-chat-msg .ql-editor {padding: 0px 10px 0px 0px!important;max-height: 90px;overflow: hidden;overflow-y: auto;}
+.activity-chat-msg .ql-container {height: auto !important;border: none!important;}
+.activity-chat-msg .quill.richtext-input {padding: 15px;}
+.activity-chat-msg .ql-editor.ql-blank::before {left: 0;right: 0;border: none;}
+
+/* .frozen{
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.09);
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+} */
+
+/* THEME CSS */
+.bg-branches::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-branches.png");
+    opacity: 0.1;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-floral-outlined::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-floral-same.webp");
+    opacity: 0.2;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-floral-filled::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-floral.webp");
+    opacity: 0.2;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-brick::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-brick-wall.webp");
+    opacity: 0.4;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-red-glass::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-red-glass.jpg");
+    opacity: 0.5;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-doodle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-doodle.jpg");
+    opacity: 0.3;
+    z-index: -1;
+    background-position: center;
+}
+
+.bg-waves::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-waves.webp");
+    opacity: 0.3;
+    z-index: -1;
+    background-position: cover;
+    background-position-y: 10px;
+}
+
+.bg-black-waves::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bg-black.png");
+    opacity: 0.6;
+    z-index: -1;
+    background-position: cover;
+}
+
+.bg-mastermind {
+    background-image: url("./assets/images/mastermind.jpg");
+}
